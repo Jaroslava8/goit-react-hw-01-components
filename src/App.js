@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+// import Friends from "./components/FriendList";
 
 function App() {
   return (
