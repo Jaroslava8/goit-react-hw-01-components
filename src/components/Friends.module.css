@@ -1,0 +1,38 @@
+.friendOnline {
+  display: block;
+  color: green;
+  background-color: green;
+  border-radius: 50px;
+  width: 8px;
+  height: 8px;
+}
+.friendoffLine {
+  display: block;
+  color: red;
+  background-color: red;
+  border-radius: 50px;
+  width: 8px;
+  height: 8px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: rgb(235, 223, 223);
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+}
+.list {
+  display: flex;
+  margin-right: 20px;
+  border: 2 px solid rgb(37, 36, 36);
+  padding-top: 10px;
+}
+.image {
+  margin-right: 10px;
+}
+.name {
+  color: grey;
+  font-weight: bold;
+}

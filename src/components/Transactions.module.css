@@ -1,0 +1,24 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.th {
+  width: 200px;
+}
+.td {
+  width: 200px;
+  text-align: center;
+}
+.list {
+  background-color: rgba(161, 174, 197, 0.068);
+  color: white;
+  margin: 0;
+  font-weight: bold;
+}
+.row {
+  background-color: rgb(204, 204, 130);
+  color: blue;
+  font-weight: bold;
+}

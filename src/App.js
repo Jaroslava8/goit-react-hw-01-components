@@ -1,26 +1,34 @@
-import logo from "./logo.svg";
-import "./App.css";
-// import Friends from "./components/FriendList";
+import React from "react";
+// import PropTypes from 'prop-types';
+import Profile from "./components/Profile";
+import user from "./user.json";
+import stats from "./data.json";
+import Statistics from "./components/Statistics";
+import Template from "./components/Template";
+import FriendList from "./components/FriendList";
+import friends from "./friends.json";
+import TransactionHistory from "./components/TransactionHistory";
+import transactions from "./transactions.json";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Template>
+        <Statistics
+          stats={stats.id}
+          label={stats.label}
+          percentage={stats.percentage}
+        />
+      </Template>
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
+    </>
   );
 }
-
-export default App;
