@@ -1,13 +1,13 @@
 import React from "react";
 // import PropTypes from 'prop-types';
-import Profile from "./components/Profile";
+import Profile from "./components/Profile/Profile";
 import user from "./user.json";
 import stats from "./data.json";
-import Statistics from "./components/Statistics";
-import Template from "./components/Template";
-import FriendList from "./components/FriendList";
+import Statistics from "./components/Statistics/Statistics";
+import Template from "./components/Statistics/Template";
+import FriendList from "./components/Friends/FriendList";
 import friends from "./friends.json";
-import TransactionHistory from "./components/TransactionHistory";
+import TransactionHistory from "./components/Transactions/TransactionHistory";
 import transactions from "./transactions.json";
 
 export default function App() {
